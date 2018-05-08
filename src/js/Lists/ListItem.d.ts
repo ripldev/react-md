@@ -5,7 +5,7 @@ import { InjectedInkProps } from '../Inks';
 export interface BaseListItemProps {
   tileStyle?: React.CSSProperties;
   tileClassName?: string;
-  primaryText: React.ReactNode;
+  primaryText?: React.ReactNode;
   secondaryText?: React.ReactNode;
   leftIcon?: React.ReactNode;
   leftAvatar?: React.ReactNode;
@@ -35,6 +35,7 @@ export interface ListItemProps extends BaseListItemProps, InjectedInkProps {
   nestedListClassName?: string;
   nestedListHeightRestricted?: boolean;
   children?: React.ReactNode;
+  primaryText: React.ReactNode;
   tabIndex?: number;
   inset?: boolean;
   component?: React.ReactType;
